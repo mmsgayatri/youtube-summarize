@@ -62,8 +62,6 @@ def extract_transcript_details(youtube_video_url, target_language):
         return None
 
 # Generate summary based on the prompt 
-# Generate summary based on the prompt 
-# Generate summary based on the prompt 
 def generate_gemini_content(transcript_text, prompt):
     try:
         model = genai.GenerativeModel("gemini-pro")
@@ -72,8 +70,6 @@ def generate_gemini_content(transcript_text, prompt):
     except Exception as e:
         st.error(f"Error generating content: {e}")
         return None
-
-
 
 # Translate summary into the desired language
 def translate_summary(summary, target_language):
